@@ -14,7 +14,15 @@ public class PYJCalculadora {
         this.numero1 = numero1;
         this.numeroPorTeclado = numeroPorTeclado;
     }
-    
+
+    public void setNumero1(int numero1) {
+        this.numero1 = numero1;
+    }
+
+    public void setNumeroPorTeclado(int numeroPorTeclado) {
+        this.numeroPorTeclado = numeroPorTeclado;
+    }
+        
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
         int seleccion = 0;
