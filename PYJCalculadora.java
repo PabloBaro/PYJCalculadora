@@ -33,6 +33,7 @@ public class PYJCalculadora {
         
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
+        PYJCalculadora ecuaciones = new PYJCalculadora();
         int seleccion = 0;
         Boolean salir = false;
         
@@ -49,31 +50,31 @@ public class PYJCalculadora {
             switch (seleccion) {
                 case 1:
                     System.out.print("Introduzca un numero a sumar: ");
-                    int sum1 = teclado.nextInt();
+                    ecuaciones.setNumero1(teclado.nextInt());
                     System.out.print("Introduzca el segundo numero a sumar: ");
-                    int sum2 = teclado.nextInt();
-                    System.out.println("La suma de " + sum1 + " + " + sum2 + " = "+"\u001B[36m"+(sum1+sum2)+"\u001B[0m");
+                    ecuaciones.setNumeroPorTeclado(teclado.nextInt());
+                    System.out.println("La suma de " + ecuaciones.getNumero1() + " + " + ecuaciones.getNumeroPorTeclado() + " = "+"\u001B[36m"+(ecuaciones.getNumero1()+ecuaciones.getNumeroPorTeclado())+"\u001B[0m");
                     break;
                 case 2:
                     System.out.print("Introduzca un numero a restar: ");
-                    int resta1 = teclado.nextInt();
+                    ecuaciones.setNumero1(teclado.nextInt());
                     System.out.print("Introduzca el segundo numero a restar: ");
-                    int resta2 = teclado.nextInt();
-                    System.out.println("La resta de " + resta1 + " - " + resta2 + " = "+"\u001B[36m"+(resta1-resta2)+"\u001B[0m");
+                    ecuaciones.setNumeroPorTeclado(teclado.nextInt());
+                    System.out.println("La resta de " + ecuaciones.getNumero1() + " - " + ecuaciones.getNumeroPorTeclado() + " = "+"\u001B[36m"+(ecuaciones.getNumero1()-ecuaciones.getNumeroPorTeclado())+"\u001B[0m");
                     break;
                 case 3:
                     System.out.print("Introduzca un numero para dividir: ");
-                    int div1 = teclado.nextInt();
+                    ecuaciones.setNumero1(teclado.nextInt());
                     System.out.print("Introduzca el segundo numero para dividir: ");
-                    int div2 = teclado.nextInt();
-                    System.out.println("La division de " + div1 + " / " + div2 + " = "+"\u001B[36m"+(div1/div2)+"\u001B[0m");
+                    ecuaciones.setNumeroPorTeclado(teclado.nextInt());
+                    System.out.println("La division de " + ecuaciones.getNumero1() + " / " + ecuaciones.getNumeroPorTeclado() + " = "+"\u001B[36m"+(ecuaciones.getNumero1()/ecuaciones.getNumeroPorTeclado())+"\u001B[0m");
                     break;
                 case 4:
                     System.out.print("Introduzca un numero a multiplicar: ");
-                    int multi1 = teclado.nextInt();
+                    ecuaciones.setNumero1(teclado.nextInt());
                     System.out.print("Introduzca el segundo numero a multiplicar: ");
-                    int multi2 = teclado.nextInt();
-                    System.out.println("La multiplicacion de " + multi1 + " * " + multi2 + " = "+"\u001B[36m"+(multi1*multi2)+"\u001B[0m");
+                    ecuaciones.setNumeroPorTeclado(teclado.nextInt());
+                    System.out.println("La multiplicacion de " + ecuaciones.getNumero1() + " * " + ecuaciones.getNumeroPorTeclado() + " = "+"\u001B[36m"+(ecuaciones.getNumero1()*ecuaciones.getNumeroPorTeclado())+"\u001B[0m");
                     break;
                 default:
                     System.out.println("Saliendo del programa...");
